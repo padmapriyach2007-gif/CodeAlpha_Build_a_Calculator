@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.calculator {
+  width: 320px;
+  background-color: #1a1a24;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.display-container {
+  background-color: #121218;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: right;
+  margin-bottom: 20px;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.expression {
+  color: #8888a0;
+  font-size: 1rem;
+  min-height: 1.2rem;
+}
+
+.display {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  background-color: #2a2a36;
+  color: #ffffff;
+  border: none;
+  padding: 18px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #383848;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn.function {
+  background-color: #3a3a4c;
+  color: #a5a5c0;
+}
+
+.btn.function:hover {
+  background-color: #48485e;
+}
+
+.btn.operator {
+  background-color: #ff9500;
+  color: #ffffff;
+}
+
+.btn.operator:hover {
+  background-color: #e08300;
+}
+
+.btn.equals {
+  background-color: #007aff;
+  color: #ffffff;
+}
+
+.btn.equals:hover {
+  background-color: #0062cc;
+}
